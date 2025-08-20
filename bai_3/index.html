@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 3: HTML (tiep)</title>
+</head>
+<body>
+    <h1>Bai 3 - HTML Concepts</h1>
+
+    <!-- MARQUEE -->
+    <Marquee>
+        Hello World
+    </Marquee>
+
+    <h2>LIST</h2>
+    <!-- Danh sach: <ol>, <ul> -->
+
+    <!-- Có thứ tự: ol, il -->
+    <p>Danh sách công việc</p>
+    <ol>
+        <li>thức dậy</li>
+        <li>ăn sáng</li>
+        <li>đánh răng</li>
+    </ol>
+
+    <!-- Không có thứ tự: ul, li -->
+    <p>Danh sách các ngôn ngữ lập trình Web</p>
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Golang</li>
+        <li>PHP</li>
+        <li>JavaScript</li>
+        <li>C#</li>
+    </ul>
+
+    <!-- Form -->
+    <h2>FORM</h2>
+
+    <form action="">
+        <!-- input -->
+        <div>
+            <b>Họ và Tên: </b>
+            <input type="text" name="fullName" placeholder="Nhập tên vào đâys">
+        </div>
+        <br>
+        
+        <div>
+            <b>Năm</b>
+            <input type="text" name="year" value="2025" readonly>
+        </div>
+        <br>
+
+        <div>
+            <b>Giới thiệu về bản thân</b>
+            <br>
+            <textarea name="userIntroduction" placeholder="Nhập giới thiệu..."></textarea>
+        </div>
+        
+        <div>
+            <b>Email: </b>
+            <input type="userEmail" placeholder="Nhập email tại đây">
+        </div>
+
+        <!-- phone number patterns -->
+        <div>
+            <b>Số điện thoại</b>
+            <input  type="tel"
+                    name="userPhoneNumber"
+                    placeholder="Dạng: 09xxxxxxx"
+                    required
+                    pattern="([0](1))([0,3,9](1))([0-9](8))">
+        </div>
+        <br>
+
+        <!-- radio button -->
+        <div>
+            <b>Nhập giới tính</b>
+            <br>
+            <input type="radio" name="gender" value="Nam">Nam <br>
+            <input type="radio" name="gender" value="Nữ">Nữ <br>
+        </div>
+        <br>
+
+        <!-- check box -->
+        <div>
+            <b>Sở thích</b>
+            <br>
+            <input type="checkbox" name="hobby" value="Game">Game <br>
+            <input type="checkbox" name="hobby" value="Basketball">Basketball <br>
+            <input type="checkbox" name="hobby" value="Football">Football <br>
+            <input type="checkbox" name="hobby" value="Pickaball">Pickaball <br>
+        </div>
+
+        <!-- datalist -->
+        <div>
+            <b>Trình duyệt phổ biến</b>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer"></option>
+                <option value="Fire Fox"></option>
+                <option value="Google Chrome"></option>
+                <option value="Microsoft Edge"></option>
+                <option value="Opera"></option>
+            </datalist>
+        </div>
+        <br>
+
+        <!-- select -->
+        <select name="browsers">
+            <option value="Internet Explorer">Internet Explorer</option>
+            <option value="Fire Fox">Fire Fox</option>
+            <option value="Google Chrome">Google Chrome</option>
+            <option value="Microsoft Edge">Microsoft Edge</option>
+            <option value="Opera">Opera</option>
+        </select>
+        <br>
+
+        <!-- range -->
+        <div>
+            <input type="range" value="50">100
+        </div>
+        <br>
+        
+        <!-- submit -->
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+
+    <iframe width="676" height="388" src="https://www.youtube.com/embed/AfpItQBKl04" title="REAL MADRID 0 vs 4 FC BARCELONA | EL CLÁSICO | LALIGA 2024/25 MD11" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
