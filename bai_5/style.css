@@ -1,0 +1,78 @@
+body{
+    margin: 0px;
+}
+
+.danhmuc{
+    background-color: #2fa4e7;
+    padding: 20px;
+}
+
+.danhmuc-danhsach{
+    display: flex;
+    list-style: none;
+}
+
+.danhmuc-lienket{
+    color: white;
+    text-decoration: none;
+}
+.danhmuc-lienket:hover{
+    color: gray;
+    font-weight: bold;
+}
+
+.danhmuc-muc{
+    margin: 10px;
+}
+
+.logo{
+    height: 80px;
+}
+
+main{
+    display: flex;
+}
+
+.noidung-trai{
+    width: 80%;
+    border-radius: 10px;
+}
+
+.tintuc-danhsach{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.baiviet{
+    height: 150px;
+    width: 32%;
+    background-image: url(images/tintuc_1.jpg);
+}
+
+.baiviet-datetime{
+    background-color: aliceblue;
+    height: 20px;
+    text-align: right;
+    font-weight: lighter;
+}
+
+.danhsach-anhminhhoa{
+    height: 150px;
+}
+
+
+.noidung-phai{
+    width: 20%;
+    height: 1000px;
+    background-color: aquamarine;
+}
+
+.tieude{
+    background-color:#2fa4e7;
+    padding: 20px;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
