@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-color: antiquewhite;
+    background-color: white;
 }
 
 .danhmuc{
@@ -106,7 +106,6 @@ main{
 .thongbao{
     border-radius: 5px;
     background-color: white;
-
 }
 
 .thongbao-noidung{
@@ -296,6 +295,10 @@ main{
 }
 
 footer{
-    height: 200px;
+    height: auto;
     background-color: #2fa4e7;
+}
+
+footer p{
+    text-align: center;
 }

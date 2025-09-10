@@ -1,0 +1,100 @@
+body{
+    margin: 0px;
+    background-color: white;
+}
+
+header{
+    background-color: black;
+}
+
+.header-container{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    height: auto;
+    justify-content: space-between;
+    background-color: black;
+}
+
+#logo{
+    width: 10%;;
+}
+
+.danhmuc{
+    display: flex;
+}
+
+.danhmuc ul{
+    list-style: none;
+    display: flex;
+    padding: auto;
+    gap: 20px;
+}
+
+
+
+.danhmuc-danhsach a{
+    color: #9b9b9b;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;  
+    font-family:  "SFProDisplay", Arial, sans-serif;;
+}
+
+.danhmuc-danhsach a:hover{
+    color: orange;
+    text-decoration: none;
+}
+
+.chucnang{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.muagoi{
+    width: 100px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+}
+
+.dangnhap{
+    width: 100px;
+    background-color: black;
+    color: #9b9b9b;
+    border: none;
+}
+
+main{
+    height: 1000px;
+    width: 100%;
+}
+
+.quangcao{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 75%;
+    height: 1000px;
+    background-color: black;
+    margin: auto;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+.ads{
+    display: flex;
+    he
+}
+
+
+
+
+
