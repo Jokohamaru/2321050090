@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=""></script>
+</head>
+<body>
+    <script>
+        let thongTinDonHang = {
+            thongTinKhachHang:{
+                hoTen: "Nguyen Xuan Kien",
+                SDT: "0325297526",
+                trangThaiThanhVien: true,
+            },
+            danhSachSanPham:{
+                sp01: {
+                    MSP: "001",
+                    tenSP: "Coffe",
+                    soLuong: 10,
+                    giaTien: 35.000,
+                },
+                sp02: {
+                    MSP: "002",
+                    tenSP: "Matcha",
+                    soLuong: 30,
+                    giaTien: 40.000,
+                },
+                sp03: {
+                    MSP: "003",
+                    tenSP: "Tra sua",
+                    soLuong: 20,
+                    giaTien: 20.000,
+                },
+            },
+            
+            trangThaiThanhToan: true,
+            diaChiGiaoHang: "Ha Noi",
+        }
+        let tongSP1 = thongTinDonHang.danhSachSanPham.sp01.giaTien * thongTinDonHang.danhSachSanPham.sp01.soLuong;
+        let tongSP2 = thongTinDonHang.danhSachSanPham.sp02.giaTien * thongTinDonHang.danhSachSanPham.sp02.soLuong;
+        let tongSP3 = thongTinDonHang.danhSachSanPham.sp03.giaTien * thongTinDonHang.danhSachSanPham.sp03.soLuong;
+
+        let tongTien = tongSP1 + tongSP2 + tongSP3;
+
+        // document.writeln("Do dai cua MDH : " + thongTinDonHang.danhSachSanPham.sp01.MSP.length);
+        var myString = "Hello kien";
+        // document.writeln(myString.slice(1,4) +'<br>'); cắt chuỗi từ vtri n đến n - 1
+
+        // document.writeln(myString.replace("Hello", "Hi,"));thay thế chuỗi
+        // document.writeln(myString.toUpperCase() + '<br> ');viết hóa 
+        // document.writeln(myString.indexOf('e'))vị trí kí tự xuất hiên nếu không thì là -1
+        document.writeln(myString.includes('e')) //kiểm tra trong chuỗi có kí tự đó hông
+        //tách chuỗi thành mảng 
+        document.writeln(myString.split("l"))
+        let danhSach = ["Thanh Nguyen" , "Phat freestyle"]
+        document.writeln(danhSach[1].startsWith(''))
+        let so = '123';
+        document.writeln(typeof (so) + '<br>')
+        document.writeln(typeof (Number(so))+'<br>')
+        var pi = 3.1434123;
+        document.writeln(pi.toFixed(2));
+        document.writeln(isNaN(10));
+
+        let toDay = new Date();
+
+        document.writeln(toDay.getMonth());
+    </script>
+</body>
+</html>
+
+zalo.me/g/snftig357
