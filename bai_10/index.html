@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 10</title>
+</head>
+<body>
+    <script>
+        // let toDay = new Date();
+        // let day = toDay.getDay();
+
+        // switch(day){
+        //     case 5:
+        //         document.writeln("friday");
+        //         break;
+        //     case 6:
+        //         document.writeln("saturday");
+        //         break;
+        //     case 0:
+        //         document.writeln("sunday");
+        //         break;
+        //     default:
+        //         document.writeln("not interesting!!");
+        // }
+        // prompt("text")
+        // let i = 0;
+        // while(i<100){
+        //     document.writeln(i + "<br>");
+        //     i++;
+        // }
+
+        // let p = prompt("tên", "điền tên");
+
+        // function say(){
+        //     document.writeln("hello");
+        // }
+        let num = prompt("is your number even?");
+        if(!isNaN(num)){
+            isEven(num);
+        } else {
+            document.writeln("pls enter a number")
+        }
+
+        function isEven(num){
+            let endNum = num.charAt(num.length - 1);
+            if(parseInt(endNum)%2===0){
+                document.writeln("is even");
+            } else {
+                document.writeln("is odd");
+            }
+        }
+    </script>
+</body>
+</html>
