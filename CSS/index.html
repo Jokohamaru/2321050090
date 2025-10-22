@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            margin: auto;
+            margin-top: 200px;
+            width: 200px;
+            height: auto;
+        }
+        .btn{
+            background-color: aquamarine;
+            border-radius: 10px;
+            position: relative;
+        }
+        .btn::before,
+        .content-list{
+            position: absolute;
+            display: none;
+            background-color: aqua;
+        }
+
+        .btn:hover, .content-list{
+            display: block;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <button class="btn"> hover me</button>
+        <div class="content-list">
+            <p class="list-item">nội dung về after</p>
+            <p class="list-item">nội dung về after</p>
+            <p class="list-item">nội dung về after</p>
+            <p class="list-item">nội dung về after</p>
+        </div>
+    </div>
+</body>
+</html>

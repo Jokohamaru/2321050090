@@ -170,8 +170,13 @@ main{
     display: flex;
 }
 .thongbao-danhsachnoidung-noidung-text{
+    display: flex;
     width: 85%;
     height: auto;
+}
+
+.new_gif{
+    height: 20px;
 }
 
 .thongbao-danhsachnoidung-noidung-text a {
