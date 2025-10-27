@@ -1,0 +1,75 @@
+return canNang / (chieuCao * chieuCao);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #showAnh img{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Chiều cao: <input id="chieuCao" type="number" placeholder="CHiều cao"> m <br>
+        Cân nặng: <input id="canNang" type="number" placeholder="Cân nặng"> kg <br>
+
+    </div>
+    <button onclick="showKetQua()">Kiểm tra</button> <br>
+    Chỉ số BMI: <input id="show" type="text">
+    <div id="showAnh">
+        <img id="anh1"  src="thieu.png" alt="">
+        <img id="anh2" src="binhthuong.png" alt="">
+        <img id="anh3" src="thua.png" alt="">
+        <img id="anh4" src="beocapdo1.png" alt="">
+        <img id="anh5" src="beonang.png" alt="">
+    </div>
+    <script>
+
+        function showKetQua(){
+            let chieucao = parseFloat(document.getElementById('chieuCao').value);
+            let cannang = parseFloat(document.getElementById('canNang').value);
+            if(isNaN(chieucao)|| isNaN(cannang)){
+                alert('Vui lòng nhập thông tin');
+            }else{
+                let bmi = tinhBMI(chieucao, cannang);
+                document.getElementById('show').value = bmi.toFixed(2);
+                anhMinhHoa(bmi);
+            }
+        }
+        let anh1 = document.getElementById('anh1');
+        let anh2 = document.getElementById('anh2');
+        let anh3 = document.getElementById('anh3');
+        let anh4 = document.getElementById('anh4');
+        let anh5 = document.getElementById('anh5');
+        function anhMinhHoa(bmi){
+            if(bmi < 18.5 ){
+                anh1.style.display = 'block';
+            }
+            else if(bmi >= 18.5 && bmi <=24.9){
+                anh2.style.display = 'block';
+            }else if(bmi >= 25 && bmi <=29.9){
+                anh3.style.display = 'block';
+            }else if(bmi >= 30 && bmi <= 39.9){
+                anh4.style.display = 'block';
+            }else{
+                anh5.style.display = 'block';
+            }
+        }
+        function tinhBMI(chieuCao, canNang){
+            if(check(chieuCao) && check(canNang)){
+                return canNang / (chieuCao * chieuCao);
+            }
+        }
+        function check(number){
+            if(typeof(number) === 'number' && number > 0){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
