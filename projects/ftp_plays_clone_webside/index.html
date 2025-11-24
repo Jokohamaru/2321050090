@@ -6,16 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Phim Lẻ 2025 - Xem Phim Lẻ Hay Mới Nhất</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        h2{
-            justify-content: center;
-        }
-    </style>
+    <script src="script.js"></script>
 </head>
 
 <body>
     <header>
         <div class="header-container">
+
             <!-- Danh mục trang web -->
             <nav class="danhmuc">
                 <img class="logo" src="images/FPTplay_Logo.png" alt="">
@@ -28,19 +25,21 @@
                     <li class="danhmuc-lienket"><a href="#">Xem thêm</a></li>
                 </ul>
             </nav>
+
             <!-- Chức năng -->
             <div class="chucnang">
                 <div>
-                    <button class="muagoi" style="font-weight: large;">Mua Gói</button>
+                    <button class="orange-btn" style="font-weight: large;">Mua Gói</button>
                 </div>
                 <div>
-                    <button class="dangnhap">Đăng nhập</button>
+                    <button class="login-btn">Đăng nhập</button>
                 </div>
             </div>
         </div>
     </header>
     <main>
         <div class="container">
+
             <!-- banner quang cao -->
             <div class="quangcao">
                 <img src="images/banner.jpg" alt="" style="width: 100%; border-radius: 5px;">
@@ -49,15 +48,27 @@
             <br>
 
             <!-- banner quang cao phim -->
-            <div>
-                <div style="display: flex; justify-content: center;">
-                    <img class="banner" src="images/muado_poster2.jpg" alt="">
+            <div id="bannerWrapper">
+                <div id="banner" style="display: flex; justify-content: center;">
+                    <img id="banner-img" src="images//film_banners/muado_poster2.jpg" alt="">
                 </div>
-                <div style="display: flex; justify-content: center;">
-                    <img class="qc" src="qc.jpg" alt="">
+
+                <div class="playMenu">
+                    <div id="playMenu-details">
+                        <span id="playMenu-type">Hành động</span> - 
+                        <span id="playMenu-releaseDate">2025</span> - 
+                        <span id="playMenu-duration">1 giờ 55 phút</span> - 
+                        <span id="playMenu-ageMinimum">18 tuổi</span> - 
+                        <span id="playMenu-nation">Việt Nam</span>
+                    </div>
+                    <p id="playMenu-description">Lấy bối cảnh năm 1972, khi Quân Giải phóng miền Nam Việt Nam giành được tỉnh Quảng Trị - vùng đất chiến lược chia cắt hai miền Nam - Bắc...</p>
+                    <button onclick="playTrailer()" id="playMenu-playTrailer" class="orange-btn">Xem Ngay</button>
                 </div>
             </div>
 
+            <div id="trailerVideoWrapper" style="width: 100%; height: 600px; display: none;">
+                <iframe id="trailer" width="100%" height="500px" src="https://www.youtube.com/embed/BD6PoZJdt_M" title="MƯA ĐỎ | OFFICIAL TRAILER | Khởi chiếu tại rạp: 22.08.2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <!-- danh sach the loai phim -->
             <div class="theloai">
 
@@ -116,6 +127,45 @@
                         <h2>Ấm áp bên người thân</h2>
                     </div>
                     <div class="films-by-topic-content">
+                        <div class="film-box" onclick="showDetail(1)">
+                            <div class="film-box-img">
+                                <img src="images/film_posters/haimuoi.jpg" alt="">
+                            </div>
+                            <span>Hai Muối</span>
+                        </div>
+                        <div class="film-box" onclick="showDetail(2)">
+                            <div class="film-box-img">
+                                <a href="#"><img src="images/film_posters/bogia.jpg" alt=""></a>
+                            </div>
+                            <span>Bố Già</span>
+                        </div>
+                        <div class="film-box">
+                            <div class="film-box-img">
+                                <a href="#"><img src="images/film_posters/codauhaomon.jpg" alt=""></a>
+                            </div>
+                            <span>Cô dâu Hào môn</span>
+                        </div>
+                        <div class="film-box">
+                            <div class="film-box-img">
+                                <a href="#"><img src="images/film_posters/mai.jpg" alt=""></a>
+                            </div>
+                            <span>Mai</span>
+                        </div>
+                        <div class="film-box">
+                            <div class="film-box-img">
+                                <a href="#"><img src="images/film_posters/ngoinhabuombuom.jpg" alt=""></a>
+                            </div>
+                            <span>Ngôi Nhà Bươm Bướm</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="films-by-topic">
+                    <div class="title">
+                        <h2>Ấm áp bên người thân</h2>
+                    </div>
+                    <div class="films-by-topic-content">
                         <div class="film-box">
                             <div class="film-box-img">
                                 <a href="#"><img src="images/film_posters/haimuoi.jpg" alt=""></a>
@@ -148,6 +198,46 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="films-by-topic">
+                    <div class="title">
+                        <h2>Ấm áp bên người thân</h2>
+                    </div>
+                    <div class="films-by-topic-content">
+                        <div class="film-box">
+                            <div class="film-box-img">
+                                <a href="#"><img src="images/film_posters/haimuoi.jpg" alt=""></a>
+                            </div>
+                            <span>Hai muối</span>
+                        </div>
+                        <div class="film-box">
+                            <div class="film-box-img">
+                                <a href="#"><img src="images/film_posters/bogia.jpg" alt=""></a>
+                            </div>
+                            <span>Bố già</span>
+                        </div>
+                        <div class="film-box">
+                            <div class="film-box-img">
+                                <a href="#"><img src="images/film_posters/codauhaomon.jpg" alt=""></a>
+                            </div>
+                            <span>Cô dâu hào môn</span>
+                        </div>
+                        <div class="film-box">
+                            <div class="film-box-img">
+                                <a href="#"><img src="images/film_posters/mai.jpg" alt=""></a>
+                            </div>
+                            <span>Mai</span>
+                        </div>
+                        <div class="film-box">
+                            <div class="film-box-img">
+                                <a href="#"><img src="images/film_posters/ngoinhabuombuom.jpg" alt=""></a>
+                            </div>
+                            <span>Ngôi nhà bươm bướm</span>
+                        </div>
+                    </div>
+                </div>
+            
+            
             </div>
 
         </div>

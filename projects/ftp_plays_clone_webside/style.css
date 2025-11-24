@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "SFProDisplay", Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
 }
 
 header {
@@ -53,20 +53,32 @@ a {
     gap: 20px;
 }
 
-.muagoi {
+.orange-btn {
     background-color: rgb(255, 98, 0);
     border: none;
     color: white;
     padding: 10px 20px;
     width: 100px;
     border-radius: 10px;
+    white-space: nowrap;
+    font-weight: bold;
 }
 
-.dangnhap {
+.orange-btn:hover{
+    cursor: pointer;
+}
+
+.login-btn {
     background-color: black;
     color: white;
     border: none;
     width: 100px;
+    font-weight: bold;
+}
+
+.login-btn:hover{
+    color: #ff6500;
+    cursor: pointer;
 }
 
 main {
@@ -83,15 +95,49 @@ main {
 
 .container {
     width: 70%;
-    height: 2000px;
+    height: auto;
     background-color: black;
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.banner {
-    width: 98%;
+#bannerWrapper{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#banner {
+    width: 100%;
+    height: auto;
+}
+
+#banner-img{
+    width: 100%;
+}
+
+.playMenu{
+    left: 30px;
+    bottom: 50px;
+    position: absolute;
+}
+
+#playMenu-details{
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+#playMenu-description{
+    max-width: 51%;
+    font-size: small;
+    font-weight: bold;
+
+}
+
+#playMenu-details span{
+    font-weight: bold;
+    margin: 0px 5px;
 }
 
 .qc {

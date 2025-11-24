@@ -66,6 +66,8 @@ main{
     height: 33%;
 }
 
+
+
 .input-place input{
     width: 97%;
     height: 65%;
@@ -74,6 +76,11 @@ main{
     font-size: large;
     padding: 5px;
     border: 1px solid #cbcdcf;
+}
+
+.input-place input:focus{
+	outline : none;
+	border-color: #0866FF;
 }
 
 .input-place button{
@@ -111,7 +118,7 @@ main{
 #new-acc button{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%;	
     transform: translate(-50%, -50%);
     width: 68%;
     height: 45%;
@@ -137,7 +144,6 @@ footer{
     width: 65%;
     height: 100%;
     margin: auto;
-    background-color: aqua;
 }
 
 .list-content{
@@ -148,10 +154,16 @@ footer{
 .list-content ul{
     list-style-type: none;
     overflow: hidden;
+	display: flex;
+	gap: 7px;
+	padding: 0px;
 }
 
-.list-content li{
-
+.list-content li,a{
+	font-size: 12px;
+	color: #737373;
+	text-decoration: none;
+	align-items: center;
 }
 
 
